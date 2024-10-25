@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import axios from 'axios'
-
+axios.defaults.withCredentials =true
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Product from "./pages/Product";
 import Home from "./pages/Homee.jsx";

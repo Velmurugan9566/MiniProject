@@ -7,6 +7,7 @@ import '../style/Productpage.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaShoppingCart,FaMicrophone, FaMicrophoneSlash,FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
+axios.defaults.withCredentials =true
 
 function App() {
   const [categories, setCategories] = useState([]);
