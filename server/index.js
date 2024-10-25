@@ -20,7 +20,7 @@ const {UpdateCart} =require('./Controllers/UpdateCart');
 const {PlaceOrder} = require('./Controllers/PlaceOrder');
 const {ContactMsgForm} =require('./Controllers/ContactMsgForm');
 const corsOptions = {
-  origin: 'https://user-pink-six.vercel.app/',
+  origin: 'https://user-pink-six.vercel.app',
   methods: ['POST', 'GET', 'PUT','DELETE'],
   credentials: true,
 };

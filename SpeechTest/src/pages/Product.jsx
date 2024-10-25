@@ -11,6 +11,7 @@ axios.defaults.withCredentials =true
 
 function App() {
   const [categories, setCategories] = useState([]);
+  axios.defaults.withCredentials =true
   const [subcategories, setSubcategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
