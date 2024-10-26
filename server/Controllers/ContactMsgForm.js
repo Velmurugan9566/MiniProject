@@ -62,14 +62,14 @@ const ContactMsgForm = async (req,res) => {
     res.json({status:2})
     console.error('Error sending email:', error);
   }
-//   try {
-//     await transporter.sendMail(mailOptions2);
-//     res.json({status:1})
-//     console.log('Contact mail sented..');
-//   } catch (error) {
-//     res.json({status:2})
-//     console.error('Error sending email:', error);
-//   }
+ try {
+    await transporter.sendMail(mailOptions2);
+   res.json({status:1})
+     console.log('Contact mail sented..');
+   } catch (error) {
+     res.json({status:2})
+     console.error('Error sending email:', error);
+   }
   transporter.verify(function(error, success) {
     if (error) {
       console.log('SMTP Server is not ready:', error);
