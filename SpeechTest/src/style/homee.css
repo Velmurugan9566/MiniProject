@@ -251,30 +251,29 @@ h2, p {
   background-image: url('./gitignoredotio.svg');
   background-size: cover;
   background-position: center;
- 
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
 }
 .icon2{
   background-image: url('./wordpress.svg');
   background-size: cover;
   background-position: center;
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
 }
 .icon3{
   background-image: url('./linkedin.svg');
   background-size: cover;
   background-position: center;
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
 }
 .icon4{
   background-image: url('./leetcode.svg');
   background-size: cover;
   background-position: center;
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
 }
 
 .leaflet-container {

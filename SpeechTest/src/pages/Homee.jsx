@@ -187,19 +187,19 @@ function App() {
           </a>
           <a href="https://github.com/Velmurugan9566" target="_blank" rel="noreferrer" className="footer-icon">
           <div className="icon1"></div>
-          <img src="Speech/SpeechTest/public/gitignoredotio.svg" alt="Git" className="custom-icon" />
+          
           </a><br/>
           <a href="https://velubhai.wordpress.com/" target="_blank" rel="noreferrer" className="footer-icon">
           <div className="icon2"></div>
-          <img src=".../public/wordpress.svg" alt="WordPress" className="custom-icon" />
+          
           </a>
          <a href="https://www.linkedin.com/in/velmurugan-m-22aa37275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="footer-icon">
          <div className="icon3"></div>
-         <img src=".../public/linkedin.svg" alt="LinkedIn" className="custom-icon" />
+         
         </a>
            <a href="https://leetcode.com/u/vel_9566/" target="_blank" rel="noreferrer" className="footer-icon">
            <div className="icon4"></div>
-           <img src=".../public/leetcode.svg" alt="LeetCode" className="custom-icon" />
+           
          </a>
         </div>
         <div className="footer-designer">
