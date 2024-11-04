@@ -251,31 +251,32 @@ h2, p {
   background-image: url('./gitignoredotio.svg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+ 
+  width:50px;
+  height:50px;
 }
 .icon2{
   background-image: url('./wordpress.svg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  width:50px;
+  height:50px;
 }
 .icon3{
   background-image: url('./linkedin.svg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  width:50px;
+  height:50px;
 }
 .icon4{
   background-image: url('./leetcode.svg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  width:50px;
+  height:50px;
 }
-.footer-socials{
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+
 .leaflet-container {
   width: 100% !important;
   height: 100% !important;
