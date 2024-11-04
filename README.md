@@ -2,10 +2,15 @@
 
                 ** VOICE BASED SHOPPING IN SUPERMARKET **
 
-
 # React + Vite
 ![home](Photos/home.PNG)
 ![home](Photos/home2.PNG)
+
+# Process flow diagram
+![PFD](Photos/pfd2.PNG)
+
+# Complete project report
+[Report](vel_project_report.pdf)
 
 # **Voice-Based Shopping System**
 
@@ -60,19 +65,19 @@ The **Voice-Based Shopping System** is designed to help visually impaired users 
    cd server
    npm install
    ```
-4. **Setup Environment Variables**: Create a `.env` file in the `server` folder and add the necessary environment variables for your database connection, email service, etc.
+4. **Setup Environment Variables**: Create a `.env` file in the `server` folder and add the necessary environment variables for your database connection, email service.
 
 5. **Start the Application**:
    For the backend:
    ```bash
-   npm run server
+   npm start
    ```
    For the frontend:
    ```bash
-   npm run client
+   npm run dev
    ```
 
-6. **Access the Application**: Open your browser and go to `http://localhost:3000`.
+6. **Access the Application**: Open the browser and go to `http://localhost:3000`.
 
 ## **Usage**
 - **User Side**: Users can use voice commands to search for products, add them to the cart, and complete the purchase using the voice-guided checkout process.
@@ -85,6 +90,6 @@ The **Voice-Based Shopping System** is designed to help visually impaired users 
 
 ## **Contact**
 For questions or support, please reach out to:
-- **Your Name**: m.velmuruga95@gmail.com
-- **Project Repository**: [GitHub Repository](https://github.com/Velmurugan9566)
+ m.velmuruga95@gmail.com
+[GitHub Repository](https://github.com/Velmurugan9566)
 

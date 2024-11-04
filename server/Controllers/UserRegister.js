@@ -37,7 +37,7 @@ const UserRegister= async (req, res) => {
     res.json({ status:3, message: 'User registered successfully' });
   } catch (error) {
     console.error(error);
-    res.json({ status:4,message: 'Server error' });
+    res.json({ status:4,message: 'Server error',err:error});
   }
 };
 const sendRegistrationEmail = (email, name) => {

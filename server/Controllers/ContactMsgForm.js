@@ -56,6 +56,7 @@ const ContactMsgForm = async (req,res) => {
 
   try {
     await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions2);
     res.json({status:1})
     console.log('Contact mail sented..');
   } catch (error) {
