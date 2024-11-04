@@ -5,7 +5,10 @@
   }
   
   .diagram{
-    background-image: url('.../Photos/pfd2.PNG');
+    background-image: url('./pfd2.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
   .ab-title {
     text-align: center;
