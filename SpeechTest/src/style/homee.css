@@ -249,8 +249,15 @@ h2, p {
 }
 .icon1{
   background-image: url('.../public/gitignoredotio.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-
+.footer-socials{
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 .leaflet-container {
   width: 100% !important;
   height: 100% !important;
