@@ -186,6 +186,7 @@ function App() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a href="https://github.com/Velmurugan9566" target="_blank" rel="noreferrer" className="footer-icon">
+          <div className="icon1"></div>
           <img src="Speech/SpeechTest/public/gitignoredotio.svg" alt="Git" className="custom-icon" />
           </a><br/>
           <a href="https://velubhai.wordpress.com/" target="_blank" rel="noreferrer" className="footer-icon">

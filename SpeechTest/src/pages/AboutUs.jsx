@@ -11,6 +11,7 @@ const AboutUs = () => {
         />
     <div className="ab-container">
       <h2>Overall Process Flow Diagram</h2>
+      <div className="diagram"></div>
       <img src='Speech/Photos/pfd2.PNG'></img>
     </div>
     </>

@@ -4,6 +4,9 @@
     background-color: #f9f9f9;
   }
   
+  .diagram{
+    background-image: url('../Photos/pfd2.PNG');
+  }
   .ab-title {
     text-align: center;
     font-size: 2rem;
