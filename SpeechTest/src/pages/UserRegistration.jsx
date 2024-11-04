@@ -100,7 +100,7 @@ const RegistrationForm = () => {
       };
     
       
-        axios.post('http://localhost:3001/register', userData)
+        axios.post(`${import.meta.env.VITE_API_URL}/register`, userData)
         .then(response=>{
            setLoad(false)
           console.log(response.data)
@@ -118,7 +118,7 @@ const RegistrationForm = () => {
         .catch(err=>{
           setLoad(false)
           toast.warning("Server error..")
-          setErrorMessage(err.response.data.message); // Display the error message from se
+          setErrorMessage(err.response.data.err); // Display the error message from se
         })
     } else {
       setLoad(false);
