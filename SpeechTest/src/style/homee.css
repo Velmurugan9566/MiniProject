@@ -248,7 +248,25 @@ h2, p {
   position: relative;
 }
 .icon1{
-  background-image: url('.../public/gitignoredotio.svg');
+  background-image: url('./gitignoredotio.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.icon2{
+  background-image: url('./wordpress.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.icon3{
+  background-image: url('./linkedin.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.icon4{
+  background-image: url('./leetcode.svg');
   background-size: cover;
   background-position: center;
   height: 100vh;
