@@ -21,10 +21,15 @@ const {PlaceOrder} = require('./Controllers/PlaceOrder');
 const {ContactMsgForm} =require('./Controllers/ContactMsgForm');
 const corsOptions = {
   origin: 'https://user-pink-six.vercel.app',
-  methods: ['POST', 'GET', 'PUT','DELETE'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
 app.use(cors(corsOptions));
+// app.use(cors({
+//   origin: 'http://localhost:5173', 
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   credentials: true
+// }));
 app.use(express.json());
 mongoose.connect(process.env.MONGO_URI,{  
 //mongoose.connect('mongodb+srv://velmca24:vel9566@cluster0.i4qp0rb.mongodb.net/grocery?retryWrites=true&w=majority&appName=Cluster0', {
@@ -33,7 +38,7 @@ mongoose.connect(process.env.MONGO_URI,{
 }).catch(err => {
     console.error('Error connecting to MongoDB', err);
 });
-app.options('*', cors(corsOptions));
+//app.options('*', cors(corsOptions));
 
 
 app.get('/categories', async (req, res) => {

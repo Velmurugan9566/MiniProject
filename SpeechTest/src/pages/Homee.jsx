@@ -12,6 +12,7 @@ import '../style/homee.css';
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import { faRss } from "@fortawesome/free-solid-svg-icons";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
@@ -88,8 +89,7 @@ function App() {
     }
   };
   useEffect(() => {
-    const sections = document.querySelectorAll('.section');
-
+    const sections = document.querySelectorAll('.section:not(.section1)'); // Select all sections except the first
     const handleScroll = () => {
       sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
@@ -126,7 +126,7 @@ function App() {
         />
       </div>
 
-      <section className="section section1">
+      <section className="section section1 active">
         <div className="content">
         <div className="hp-textbox"> <input type='text' className='textp' placeholder='Tell Explore or Order...' value={transcript} readOnly></input><div className='svg'><FaMicrophone /></div> </div>
          
@@ -162,51 +162,68 @@ function App() {
         </p>
         </div>
       </section>
-      <section className="section section2">
-       
-      </section>
       <section className="section section3">
         <div className="content">
         <h2>list of Voice Commands in Cart page</h2>
         <p>
           Example voice commands:<br />
-          - "Add milk to cart"<br />
-          - "Checkout now"<br />
-          - "Show my cart"
+          - "Print" to print the bill<br />
+          - "Checkout" navigate to the bill page<br />
+          - "preview" it will tell the all products in the cart<br />
+          - "Back" back one step from the command like quantity to product name <br />
+          - "home" navigate to home page<br />
+          - "explore" navigate to product list page<br />
         </p>
         </div>
       </section>
-   
       <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-socials">
          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer-icon">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="footer-icon">
+          <a href="https://www.instagram.com/mr_velmurugan_/profilecard/?igsh=anVxMWoxYTgyemth" target="_blank" rel="noreferrer" className="footer-icon">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://yourblog.com" target="_blank" rel="noreferrer" className="footer-icon">
-            <FontAwesomeIcon icon={faRss} />
+          <a href="https://github.com/Velmurugan9566" target="_blank" rel="noreferrer" className="footer-icon">
+          <img src="../public/gitignoredotio.svg" alt="Git" className="custom-icon" />
+          </a><br/>
+          <a href="https://velubhai.wordpress.com/" target="_blank" rel="noreferrer" className="footer-icon">
+          <img src="../public/wordpress.svg" alt="WordPress" className="custom-icon" />
           </a>
+         <a href="https://www.linkedin.com/in/velmurugan-m-22aa37275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="footer-icon">
+         <img src="../public/linkedin.svg" alt="LinkedIn" className="custom-icon" />
+        </a>
+           <a href="https://leetcode.com/u/vel_9566/" target="_blank" rel="noreferrer" className="footer-icon">
+           <img src="../public/leetcode.svg" alt="LeetCode" className="custom-icon" />
+         </a>
         </div>
         <div className="footer-designer">
           <p>Designed by VeluBhai</p>
         </div>
         <div className="footer-contact">
-          <p>Contact: 40A vinayager Sannadhi street,Keelachaval, Tirunelveli, Tamilnadu</p>
-        </div>
-        <div className="footer-map">
-          <MapContainer center={position} zoom={8} style={{ height: "100%", width: "100%" }}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-            <Marker position={position}>
-              <Popup>My home</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
+        <a href="https://maps.app.goo.gl/D3jtW2KLtTHdYsqZ9" target="_blank" rel="noreferrer">
+          <p>Contact: 40A vinayager Sannadhi street,Keelachaval, Tirunelveli, Tamilnadu</p></a>
+        </div><button onClick={trigerConfetti}>Click Me</button>
+        <div className="footer-map-container">
+  <MapContainer
+    center={position}
+    zoom={8}
+    style={{ height: "100%", width: "100%" }}
+    scrollWheelZoom={true}
+    zoomControl={true}
+    dragging={false}  // Disables dragging if you want it to stay fixed in position
+  >
+    <TileLayer
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    />
+    <Marker position={position}>
+      <Popup>My home</Popup>
+    </Marker>
+  </MapContainer>
+</div>
+
       </div>
     </footer>
 

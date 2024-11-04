@@ -4,9 +4,8 @@
 
 
 # React + Vite
-
-![Home page](src/assets/homepg.jpg)
-
+![home](Photos/home.PNG)
+![home](Photos/home2.PNG)
 
 # **Voice-Based Shopping System**
 
